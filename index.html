@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa3D | Artículos impresos en 3D</title>
+    <meta name="description" content="Tienda de atículos útiles y decorativos impresos en 3D.">
+
+    <!-- Hojas de estilo: primero normalize, después las nuestras -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Fuente de los títulos (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="header">
+        <div class="contenedor header__interior">
+            <a class="header__logo" href="index.html" aria-label="Capa3D, ir al inicio">Capa<span>3D</span></a>
+
+            <nav class="navegacion" aria-label="Principal">
+                <a class="navegacion__enlace navegacion__enlace--activo" href="index.html" aria-current="page">Inicio</a>
+                <a class="navegacion__enlace" href="catalogo.html">Catálogo</a>
+                <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                <a class="navegacion__enlace" href="#contacto">Contacto</a>
+                <a class="navegacion__enlace" href="cuenta.html">Mi cuenta</a>
+                <a class="navegacion__enlace" href="carrito.html">
+                    Carrito
+                    <!-- El número se actualizará con JavaScript en la Fase 4 -->
+                    <span class="navegacion__contador" id="contador-carrito">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO (sección principal) ===== -->
+        <section class="hero">
+            <div class="contenedor hero__interior">
+                <div class="hero__texto">
+                    <p class="hero__etiqueta">Impresión 3D bajo pedido</p>
+                    <h1 class="hero__titulo">Objetos útiles, impresos capa por capa</h1>
+                    <p class="hero__descripcion">
+                        Organizadores, figuras, soportes y decoración. Diseñados y fabricados con cuidado, listos para tu escritorio o tu hogar.
+                    </p>
+                    <div class="hero__acciones">
+                        <a class="boton boton--primario" href="catalogo.html">Ver catálogo</a>
+                        <a class="boton boton--secundario" href="nosotros.html">Cómo trabajamos</a>
+                    </div>
+                </div>
+
+                <!-- CAMBIAR IMAGEN: reemplaza el valor de src por tu propia imagen (ej. img/hero.jpg) -->
+                <img class="hero__imagen" src="img/hero-placeholder.svg"
+                     alt="Ilustración de un objeto impreso en 3D, formado por capas apiladas"
+                     width="600" height="450">
+            </div>
+        </section>
+
+        <!-- ===== PRODUCTOS DESTACADOS ===== -->
+        <section class="seccion contenedor" aria-labelledby="titulo-destacados">
+            <h2 class="seccion__titulo" id="titulo-destacados">Productos destacados</h2>
+
+            <!-- En la Fase 2, JavaScript llenará este contenedor con tarjetas -->
+            <div id="productos-destacados">
+                <p class="mensaje-vacio">Pronto verás aquí nuestros productos destacados.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="footer" id="contacto">
+        <div class="contenedor footer__interior">
+            <div>
+                <p class="footer__marca">Capa<span>3D</span></p>
+                <p class="footer__texto">Impresión 3D bajo pedido. Cada pieza se fabrica al recibir tu orden.</p>
+            </div>
+
+            <address class="footer__contacto">
+                <p>Correo: <a href="mailto:hola@capa3d.example">hola@capa3d.example</a></p>
+                <p>WhatsApp: +00 000 000 0000</p>
+            </address>
+        </div>
+        <p class="footer__copyright">© 2026 Capa3D. Proyecto de práctica.</p>
+    </footer>
+</body>
+</html>
