@@ -1,0 +1,19 @@
+# ===== Archivos del sistema operativo =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Editores =====
+.vscode/
+.idea/
+
+# ===== Dependencias y logs (por si algún día se usan) =====
+node_modules/
+*.log
+
+# ===== Secretos: NUNCA se suben a GitHub =====
+.env
+.env.*
+
+# ===== Archivos locales de Netlify =====
+.netlify/
